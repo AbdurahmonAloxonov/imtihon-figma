@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1920px;
+  height: 100%;
+}
+
+/* Top bar */
+.top {
+  height: 44px;
+  background-color: #454F5B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+#recall {
+  margin-left: auto;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Header */
+.header {
+  display: flex;
+  height: 70px;
+  padding: 20px 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+  margin: 0 10px;
+}
+
+.bar a:hover {
+  text-decoration: underline;
+}
+
+.item p, .store i, .store a {
+  cursor: pointer;
+}
+
+.store a:hover {
+  color: #454F5B;
+}
+
+.word, .elektr, .filter {
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+.word span, .elektr p, .filter button, .filter select {
+  font-size: 17px;
+  color: #454F5B;
+}
+
+.filter button, .filter select {
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.filter button {
+  background-color: #F5F5F5;
+  border: 1px solid #C4CDD5;
+}
+
+.filter button:hover {
+  background-color: #454F5B;
+  color: #fff;
+}
+
+.filter select {
+  margin-left: 50px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .cart {
+  cursor: pointer;
+}
+
+/* Product Grid */
+.product-grid, .products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-card .category, .product-card .rating {
+  font-size: 14px;
+  color: #555;
+}
+
+.product-card .new-price {
+  font-size: 16px;
+  color: #007bff;
+  margin: 5px 0;
+}
+
+.product-card .old-price {
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.product-card .stars {
+  display: inline-block;
+  color: #ffcc00;
+  font-size: 20px;
+}
+
+.product-card button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Black and White Sections */
+.black, .white {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+.info, .info2 {
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.info h1, .info2 h1 {
+  font-size: 32px;
+}
+
+.info p, .info2 p {
+  font-size: 18px;
+  color: #454F5B;
+}
+
+.box {
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.box span, .box input {
+  font-size: 20px;
+  color: #161C24;
+}
+
+/* Cal Section */
+.cal {
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: #F2F8FF;
+  height: 340px;
+}
+
+.cal h1 {
+  padding-top: 70px;
+  color: #161C24;
+  font-size: 44px;
+}
+
+.cal p {
+  padding-top: 20px;
+  color: #454F5B;
+  font-size: 16px;
+}
+
+.inputss {
+  padding-top: 50px;
+}
+
+.inputss input, .inputss button {
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.inputss button {
+  background-color: #4295E4;
+  border: 1px solid #4295E4;
+  color: #fff;
+}
+
+.inputss button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Bottom Section */
+.bottom {
+  background-color: #0D2436;
+  padding: 60px 0;
+}
+
+.bottom_links {
+  display: flex;
+  gap: 140px;
+  margin-left: 80px;
+}
+
+.images img {
+  width: 105px;
+}
+
+.ins i {
+  color: #fff;
+  margin: 10px;
+}
+
+.navigation h3, .kontakt h3, .adres h3, .inovation h3 {
+  font-size: 18px;
+  color: #fff;
+}
+
+.navigation p, .kontakt p, .kontakt span, .adres p, .inovation p {
+  font-size: 16px;
+  color: #C4CDD5;
+}
+
+.end {
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  font-size: 14px;
+}
