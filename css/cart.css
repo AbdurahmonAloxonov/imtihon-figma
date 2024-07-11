@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center; /* Markazga joylash */
+  align-items: center; /* Markazga joylash */
+  height: 100vh; /* To'liq ekran balandligi */
+  margin: 0;
+  background-color: #ffffff; /* Oq fon */
+}
+
+/* Rasm uchun stil */
+.img {
+  width: 200px; /* Rasm kichaydi */
+  height: auto; /* Avtomatik balandlik */
+  animation: zoom-in 0.5s ease-out, slide-up 1s ease-out; /* Animatsiyalar */
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0.8); /* Boshlang'ich masshtab kichik */
+    opacity: 0; /* Boshlang'ich shaffof */
+  }
+  to {
+    transform: scale(1); /* To'liq masshtab */
+    opacity: 1; /* To'liq oqim */
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(50px); /* Yuqoriga tarqalish */
+    opacity: 0; /* Boshlang'ich shaffof */
+  }
+  to {
+    transform: translateY(0); /* O'rtaga qaytish */
+    opacity: 1; /* To'liq oqim */
+  }
+}
+
+/* Yozuvlar uchun stil */
+.text {
+  font-size: 24px; /* Matn o'lchami */
+  color: #333; /* Tog'ri rang */
+  margin-top: 10px; /* Yuqori bo'shlik */
+}
+
+/* Narx stil */
+.price {
+  text-align: center; /* Matn markazga */
+  font-size: 18px; /* Matn o'lchami */
+  color: #007bff; /* Narx uchun ko'k rang */
+  margin-top: 10px; /* Yuqori bo'shlik */
+}
